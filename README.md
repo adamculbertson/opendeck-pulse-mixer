@@ -1,5 +1,6 @@
 # PulseAudio Mixer OpenDeck Plugin
 ![Screenshot from OpenDeck of the mixer controlling four different devices, Game, Voice Chat, Media, and Headset](github/opendeck-ui.png)
+
 Control PulseAudio Sink volumes from within OpenDeck on a supported Elgato StreamDeck device.
 
 ## Libraries
