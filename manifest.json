@@ -1,0 +1,87 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/volume-plus",
+      "Name": "Raise Volume",
+      "States": [
+        {
+          "Image": "images/volume-plus",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Increase the volume of the sink",
+      "UUID": "me.adamculbertson.pulsemixer.volup",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/volume-minus",
+      "Name": "Decrease Volume",
+      "States": [
+        {
+          "Image": "images/volume-minus",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Decrease the volume of the sink",
+      "UUID": "me.adamculbertson.pulsemixer.voldown",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/volume-mute",
+      "Name": "Mute",
+      "States": [
+        {
+          "Image": "images/volume-mute",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Mute the sink",
+      "UUID": "me.adamculbertson.pulsemixer.mute",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/music",
+      "Name": "Show Volume",
+      "States": [
+        {
+          "Image": "images/music",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Show the volume level / sink name",
+      "UUID": "me.adamculbertson.pulsemixer.showvol",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    }
+  ],
+  "Author": "Adam Culbertson",
+  "Description": "Media control and volume management for Stream Deck",
+  "Name": "Stream Deck Media Controls",
+  "Icon": "images/music",
+  "URL": "https://github.com/adamculbertson",
+  "Version": "1.0.0",
+  "CodePath": "main.py",
+  "Category": "Media",
+  "CategoryIcon": "images/music",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    },
+    {
+      "Platform": "linux",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.4.1"
+  }
+}
