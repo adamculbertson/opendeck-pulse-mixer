@@ -130,6 +130,7 @@ class PulsePlugin(plugin.SDPlugin):
         :param context: Stream Deck context, provided by the WebSocket API
         :return: None
         """
+        self.refresh()
         settings = self.ctxSettings.get(context)
         info = self.ctxInfo.get(context)
 

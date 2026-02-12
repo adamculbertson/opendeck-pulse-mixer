@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 # Configuration
 DEV_DIR="PulseMixer"
 PLUGIN_NAME="me.adamculbertson.pulsemixer.sdPlugin"
@@ -15,8 +17,11 @@ rsync -av "$DEV_DIR/" "$STAGING_DIR/$PLUGIN_NAME" \
     --exclude "__pycache__" \
     --exclude "*.pyc" \
     --exclude ".idea" \
+    --exclude "github" \
+    --exlude ".venv" \
     --exclude ".git" \
     --exclude ".vscode" \
+    --exlude ".gitignore" \
     --exclude "build.sh" \
     --exclude "*.zip"
 

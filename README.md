@@ -10,7 +10,7 @@ Uses BarRaider's [EasyPI v2](https://github.com/BarRaider/streamdeck-easypi-v2) 
 Make sure you have [OpenDeck](https://github.com/nekename/OpenDeck) installed. Go to Plugins, then "Install from file" and select the ZIP file that you created/downloaded from here.
 
 ## Building
-If you want to build the plugin yourself, you can run the `build.sh` script. It basically just packages the Python scripts and resources into a ZIP file in a format that OpenDeck expects.
+If you want to build the plugin yourself, you can run the `build.sh` script (outside the plugin directory, though). It basically just packages the Python scripts and resources into a ZIP file in a format that OpenDeck expects.
 
 ## Font
 The images are created using [DejaVu Sans](https://dejavu-fonts.github.io/).
