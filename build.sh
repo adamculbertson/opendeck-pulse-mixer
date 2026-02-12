@@ -18,10 +18,10 @@ rsync -av "$DEV_DIR/" "$STAGING_DIR/$PLUGIN_NAME" \
     --exclude "*.pyc" \
     --exclude ".idea" \
     --exclude "github" \
-    --exlude ".venv" \
+    --exclude ".venv" \
     --exclude ".git" \
     --exclude ".vscode" \
-    --exlude ".gitignore" \
+    --exclude ".gitignore" \
     --exclude "build.sh" \
     --exclude "*.zip"
 

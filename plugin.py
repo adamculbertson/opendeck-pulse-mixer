@@ -27,6 +27,8 @@ class StreamDeck:
         self.socket = websocket.WebSocketApp(f"ws://127.0.0.1:{str(self.port)}", on_open=self.on_open,
                                              on_close=self.on_close, on_message=self.on_message)
 
+        self.loop_interval = 0.2 # Amount of time, in seconds, to wait for the next loop iteration
+
         logging.debug(f"info: {info}")
 
         # Define functions to handle events after they've been processed
@@ -62,7 +64,7 @@ class StreamDeck:
 
             # Wait 0.2 seconds before continuing the loop
             event = threading.Event()
-            event.wait(timeout=0.2)
+            event.wait(timeout=self.loop_interval)
 
     def run(self):
         """

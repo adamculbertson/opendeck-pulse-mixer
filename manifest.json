@@ -62,8 +62,8 @@
     }
   ],
   "Author": "Adam Culbertson",
-  "Description": "Media control and volume management for Stream Deck",
-  "Name": "Stream Deck Media Controls",
+  "Description": "PulseAudio volume mixer for Stream Deck",
+  "Name": "PulseMixer",
   "Icon": "images/music",
   "URL": "https://github.com/adamculbertson",
   "Version": "1.0.1",
