@@ -10,11 +10,7 @@ Uses BarRaider's [EasyPI v2](https://github.com/BarRaider/streamdeck-easypi-v2) 
 Make sure you have [OpenDeck](https://github.com/nekename/OpenDeck) installed. Go to Plugins, then "Install from file" and select the ZIP file that you created/downloaded from here.
 
 ## Building
-If you want to build the plugin yourself, you can run the `build.sh` script (outside the plugin directory, though). It basically just packages the Python scripts and resources into a ZIP file in a format that OpenDeck expects.
+If you want to build the plugin yourself, you can run the `build.sh` script (outside the plugin directory, though). It basically just packages the Python scripts and resources into a ZIP file in a format that OpenDeck expects. You will also need my [base plugin](https://github.com/adamculbertson/opendeck-base-plugin) in the same directory as this plugin's directory.
 
-## Font
-The images are created using [DejaVu Sans](https://dejavu-fonts.github.io/).
-
-## Icons
-The icons were sourced from: https://pictogrammers.com/library/mdi/  
-Most of them are available under the Apache 2.0 license.
+## More Information
+Information about the default included libraries, fonts, etc. can be found in my [base plugin](https://github.com/adamculbertson/opendeck-base-plugin)
