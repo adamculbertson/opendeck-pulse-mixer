@@ -121,8 +121,24 @@ class PulsePlugin(plugin.SDPlugin):
         Refreshes the internal list of sinks
         :return: None
         """
-        with self.pulse_lock:
-            self.sinks = self.pulse.sink_list()
+        try:
+            with self.pulse_lock:
+                self.sinks = self.pulse.sink_list()
+        except pulsectl._pulsectl.LibPulse.CallError as e:
+            self.logger.error(f"PulseAudio error: {e}")
+            self.sinks = []
+
+            for ctx in self.contexts:
+                self.ShowAlert(ctx)
+
+            # Try to reconnect so the plugin doesn't stay dead
+            with self.pulse_lock:
+                try:
+                    self.pulse.close()  # Clean up old connection if possible
+                    self.pulse = pulsectl.Pulse("sd-audio-plugin")
+                    self.logger.info("Reconnected to PulseAudio")
+                except Exception as re_e:
+                    self.logger.error(f"Reconnection failed: {re_e}")
 
     def on_loop(self, context: str):
         """
